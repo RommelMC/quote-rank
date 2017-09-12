@@ -1,0 +1,12 @@
+<div id='container'>
+  <div class='item' id='quote'>
+    <p>{{quote.content}}</p>
+    <p>-{{quote.author}}</p>
+  </div>
+  <div class='item' id='votes'>{{quote.votes}}</div>
+  <div class='item' id='buttons'>
+    <button (click)="upVote()">Vote up</button>
+    <button (click)="downVote()">Vote down</button>
+    <button (click)="remove()">Delete</button>
+  </div>
+</div>

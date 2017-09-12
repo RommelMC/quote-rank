@@ -1,0 +1,6 @@
+<div id='container'>
+  <app-add (newQuote)="addQuote($event)"></app-add>
+
+  <h1>Quotes List</h1>
+  <app-quote (quoteDel)="rmQuote(idx)" (quoteUp)="upVote(idx)" (quoteDown)="downVote(idx)" *ngFor="let quote of allQuotes, let idx = index" [quote]='quote'></app-quote>
+</div>
